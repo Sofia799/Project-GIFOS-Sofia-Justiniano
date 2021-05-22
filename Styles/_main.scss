@@ -1,0 +1,105 @@
+@import "./variables";
+@media screen and (max-width: 500px) {
+    .container-buscador-GIFOS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .tittle-p,
+    .GIFOS {
+        font-size: 25px;
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin: 7px 44px 0 44px;
+        //background-color: yellowgreen;
+        font-weight: bold;
+    }
+    .GIFOS {
+        color: $secondary-color;
+        margin: auto;
+    }
+    .container-image {
+        width: 100%;
+        //background-color: violet;
+        display: flex;
+        //margin-top: 31px;
+        margin: 31px 51px 0 51px;
+    }
+    .container-image img {
+        width: 75%;
+        margin: auto;
+        //align-self: center;
+        //margin: 0px 51px 0 51px;
+    }
+    .buscador {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        //text-align: center;
+        //padding: 5%;
+        border: 1px solid $primary-color;
+        border-radius: 27px;
+        //margin: 0 21px 0 21px;
+        width: 90%;
+    }
+    .buscar-gifos {
+        //color: black;
+        margin: 15px 40px 15px 40px;
+        font-family: 'Roboto', sans-serif;
+        border: none;
+        text-align: left;
+        //padding: 10px;
+        width: 50%;
+        font-size: 16px;
+    }
+    .container-lupa {
+        width: 20%;
+        display: flex;
+        justify-content: center;
+    }
+    .container-trending {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 30px 0 45px 0;
+    }
+    .trending-tittle {
+        font-family: 'Montserrat', sans-serif;
+        color: $primary-color;
+        font-size: 16px;
+        padding: 10px 10px 7px 10px;
+        font-weight: bold;
+    }
+    .container-trending p {
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        text-align: center;
+        margin: 0 20% 0 20%;
+        padding: 0 10px 10px 10x;
+        font-size: 14px;
+    }
+    .container-gifs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #F3F5F8;
+        width: 100%;
+        height: 400px;
+    }
+    .tittle-trending-gifos {
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px;
+        margin: 46px 0 7px 0;
+    }
+    .container-gifs p {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        padding: 2px;
+    }
+}
