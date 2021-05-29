@@ -22,10 +22,10 @@
         <div class="linea-azul"></div>
         <div class="container-header">
 
-            <img src="./Recursos/Images/logo_gifos.svg" alt="Logo Gifos">
+            <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
 
             <div class="menu-desplegable">
-                <input id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
+                <input class="abrir-cerrar" id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
                 <label for="abrir-cerrar" class="toggle-button"></label>
 
                 <nav class="nav-menu">
@@ -39,6 +39,10 @@
                         <li class="item-menu">
                             <a class="item" href="">Mis GIFOS</a>
                         </li>
+                        <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
+                        <!-- <li class="item-menu" id="crear-gifo">
+                            <img src="./Images/button-crear-gifo.svg" alt="">
+                        </li> -->
                     </ul>
                 </nav>
 
@@ -54,12 +58,12 @@
                 Inspírate, busca, guarda, y crea los mejores <span class="GIFOS">GIFOS</span>
             </p>
             <div class="container-image">
-                <img src="./Recursos/Images/ilustra_header.svg" 1 alt="Imagen 3 personas GIFOS">
+                <img src="./Images/ilustra_header.svg" 1 alt="Imagen 3 personas GIFOS">
             </div>
             <div class="buscador">
                 <input class="buscar-gifos" type="text" placeholder="Busca GIFOS y más">
                 <div class="container-lupa">
-                    <img class="lupa" src="./Recursos/GIFOS-UI-Desktop+Mobile-Update/assets/icon-search.svg" alt="Lupa">
+                    <img class="lupa" src="./Images/icon-search.svg" alt="Lupa">
                 </div>
             </div>
 
@@ -75,28 +79,33 @@
         <section class="container-gifs">
 
             <h2 class="tittle-trending-gifos">Trending GIFOS</h2>
-            <p>Mira los últimos</p>
-            <p>GIFOS de nuestra comunidad.</p>
-
+            <div id="container-parrafos">
+                <p>Mira los últimos</p>
+                <p>GIFOS de nuestra comunidad.</p>
+            </div>
         </section>
 
     </main>
 
     <footer class="container-footer">
 
-        <h5>Compartir en:</h5>
-        <div class="container-icons">
-            <a href="#">
-                <img src="./Recursos/GIFOS-UI-Desktop+Mobile-Update/assets/icon_facebook.svg" alt="Icon-facebook">
-            </a>
-            <a href="#">
-                <img src="./Recursos/GIFOS-UI-Desktop+Mobile-Update/assets/icon-tw-normal.svg" alt="Icon-twitter">
-            </a>
-            <a href="#">
-                <img src="./Recursos/GIFOS-UI-Desktop+Mobile-Update/assets/icon_instagram.svg" alt="Icon-instagram">
-            </a>
+        <div class="containerIconsH5">
+            <h5>Compartir en:</h5>
+            <div class="container-icons">
+                <a href="#">
+                    <img src="./Images/icon_facebook.svg" alt="Icon-facebook">
+                </a>
+                <a href="#">
+                    <img src="./Images/icon-twitter.svg" alt="Icon-twitter">
+                </a>
+                <a href="#">
+                    <img src="./Images/icon_instagram.svg" alt="Icon-instagram">
+                </a>
+            </div>
         </div>
-        <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
+        <div class="container-copyright">
+            <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
+        </div>
         <div class="linea-azul"></div>
 
     </footer>
