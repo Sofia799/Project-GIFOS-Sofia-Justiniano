@@ -1,4 +1,4 @@
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 899px) {
   header {
     width: 100%;
     height: 95px;
@@ -29,97 +29,49 @@
         -ms-flex-align: center;
             align-items: center;
   }
-  input#abrir-cerrar {
-    visibility: hidden;
-    position: absolute;
-    top: -9999px;
-  }
-  .toggle-button {
-    display: block;
-    width: 35px;
-    height: 35px;
-    position: relative;
-    cursor: pointer;
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    margin: 16px 10px 16px 0px;
-  }
-  .toggle-button:before,
-  .toggle-button:after {
-    position: absolute;
-    display: block;
-    content: " ";
-    width: calc(100% / 2);
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
-    left: calc(100% / 4);
-    -webkit-transition: all 0.2s ease-out;
-    transition: all 0.2s ease-out;
-  }
-  .toggle-button:before {
-    top: calc(100% / 4);
-    height: calc(100% / 4);
-    border-top: 2px solid #572EE5;
-    border-bottom: 2px solid #572EE5;
-    background-color: transparent;
-  }
-  .toggle-button:after {
-    height: 2px;
-    background-color: #572EE5;
-    bottom: calc(100% / 4);
-  }
-  input#abrir-cerrar:checked + .toggle-button:before,
-  input#abrir-cerrar:checked + .toggle-button:after {
-    top: calc(100% / 2);
-    height: 1px;
-    border-bottom: 0;
-  }
-  input#abrir-cerrar:checked + .toggle-button:before {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-  }
-  input#abrir-cerrar:checked + .toggle-button:after {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-  }
-  .menu-desplegable input {
+  .button-cruz {
     display: none;
-  }
-  .nav-menu {
-    position: absolute;
-    background: #572ee5;
-    width: 100%;
-    top: 95px;
-    margin-left: -88%;
-    -webkit-transition: all 0.5s;
-    transition: all 0.5s;
   }
   .nav-menu ul {
     display: none;
+    background-color: rgba(86, 46, 229, 0.892);
   }
-  input:checked ~ .nav-menu ul {
+  input:checked ~ ul {
     display: block;
-    -webkit-transition: all 0.5s ease-out;
-    transition: all 0.5s ease-out;
+    position: absolute;
+    top: 95px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: translate(auto, -100%);
+            transform: translate(auto, -100%);
+  }
+  .nav-menu input {
+    display: none;
+  }
+  .nav-menu {
+    margin-right: 26px;
   }
   .item-menu {
-    margin: 16px 0 24px 16px;
-    font-family: 'IBM Plex Mono';
+    text-align: center;
+    padding: 20px 50px;
+    margin-top: 5px;
   }
   .item {
-    height: 28px;
     color: white;
-    font-size: 16px;
-  }
-  .item:hover {
-    text-decoration: none;
-    color: white;
-    text-shadow: 0 0 5px #00b2ff, 0 0 10px #00b2ff, 0 0 20px #00b2ff, 0 0 40px #26687f, 0 0 80px #26687f, 0 0 90px #26687f, 0 0 100px #26687f, 0 0 140px #26687f, 0 0 180px #26687f;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 15px;
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 501px) {
+  .item {
+    font-size: 17px;
+  }
+}
+
+@media screen and (min-width: 900px) {
   header {
     width: 100%;
     height: 95px;
@@ -153,9 +105,6 @@
   .abrir-cerrar {
     display: none;
   }
-  .menu-desplegable {
-    width: 50%;
-  }
   .nav-menu ul {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -181,7 +130,7 @@
     width: 54px;
     height: 54px;
   }
-  .img-cruz:hover {
+  .img-cruz:active {
     background-image: url("../Images/CTA-crear-gifo-hover.svg");
   }
   .item-menu {
@@ -199,7 +148,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 899px) {
   .container-buscador-GIFOS {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -329,7 +278,21 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 501px) {
+  .container-image {
+    width: 90%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 31px 51px 0 51px;
+  }
+  .container-image img {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .container-buscador-GIFOS {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -466,7 +429,7 @@
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 899px) {
   .container-footer {
     width: 100%;
     display: -webkit-box;
@@ -539,7 +502,69 @@
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 501px) {
+  .container-footer {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .containerIconsH5 {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 49.5px;
+  }
+  .container-copyright {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    margin-top: -72.2px;
+  }
+  .copyright {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 13px;
+    margin: 49.5px 155px 49.5px 0;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+  }
+  .containerIconsH5 h5 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    font-size: 13px;
+    margin-left: 156px;
+  }
+  .container-icons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 10px;
+    width: 25%;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 900px) {
   .container-footer {
     width: 100%;
     display: -webkit-box;

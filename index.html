@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>GIFOS</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -24,29 +24,29 @@
 
             <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
 
-            <div class="menu-desplegable">
-                <input class="abrir-cerrar" id="abrir-cerrar" name="abrir-cerrar" type="checkbox" value="" />
-                <label for="abrir-cerrar" class="toggle-button"></label>
+            <nav class="nav-menu">
 
-                <nav class="nav-menu">
-                    <ul>
-                        <li class="item-menu">
-                            <a class="item" href="">Modo Nocturno</a>
-                        </li>
-                        <li class="item-menu">
-                            <a class="item" href="">Favoritos</a>
-                        </li>
-                        <li class="item-menu">
-                            <a class="item" href="">Mis GIFOS</a>
-                        </li>
-                        <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
-                        <!-- <li class="item-menu" id="crear-gifo">
+                <input id="menu" type="checkbox" value="" />
+                <label for="menu"><img id="burger" src="./Images/burger.svg" alt=""></label>
+
+                <ul>
+                    <li class="item-menu">
+                        <a class="item" href="">Modo Nocturno</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item" href="">Favoritos</a>
+                    </li>
+                    <li class="item-menu">
+                        <a class="item" href="">Mis GIFOS</a>
+                    </li>
+                    <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
+                    <!-- <li class="item-menu" id="crear-gifo">
                             <img src="./Images/button-crear-gifo.svg" alt="">
                         </li> -->
-                    </ul>
-                </nav>
+                </ul>
+            </nav>
 
-            </div>
+
         </div>
 
     </header>
@@ -83,6 +83,7 @@
                 <p>Mira los últimos</p>
                 <p>GIFOS de nuestra comunidad.</p>
             </div>
+            <div id="gifs"></div>
         </section>
 
     </main>
@@ -110,7 +111,7 @@
 
     </footer>
 
-    <script src=""></script>
+    <script src="./Script/script.js"></script>
 </body>
 
 </html>

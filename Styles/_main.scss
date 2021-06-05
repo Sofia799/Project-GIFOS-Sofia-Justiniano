@@ -1,5 +1,5 @@
 @import "./variables";
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 899px) {
     .container-buscador-GIFOS {
         display: flex;
         flex-direction: column;
@@ -106,7 +106,23 @@
     }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 501px) {
+    .container-image {
+        width: 90%;
+        //background-color: violet;
+        display: flex;
+        //margin-top: 31px;
+        margin: 31px 51px 0 51px;
+    }
+    .container-image img {
+        width: 55%;
+        margin: auto;
+        //align-self: center;
+        //margin: 0px 51px 0 51px;
+    }
+}
+
+@media screen and (min-width: 900px) {
     .container-buscador-GIFOS {
         display: flex;
         flex-direction: column;
