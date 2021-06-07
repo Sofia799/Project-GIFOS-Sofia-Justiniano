@@ -1,0 +1,44 @@
+@import "./variables";
+@media screen and (max-width: 899px) {
+    .container-svg-tittle-favoritos {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .icon-favoritos {
+        width: 28px;
+        height: 21px;
+        margin-bottom: 7px;
+    }
+    .tittle-favoritos {
+        font-size: 20px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        color: $primary-color;
+        margin-bottom: 46px;
+    }
+    #container-gifs-favoritos {
+        width: 100%;
+        height: 300px;
+        background-color: rgb(242, 218, 175);
+    }
+    .container-btn-verMas {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #button-verMas {
+        padding: 18px 30px;
+        border-radius: 25px;
+        border: 1px solid $primary-color;
+        background-color: $white-color;
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 13px;
+        cursor: pointer;
+        margin: 78px 0 78px 0;
+        text-align: center;
+    }
+}

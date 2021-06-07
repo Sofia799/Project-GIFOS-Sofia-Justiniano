@@ -87,10 +87,12 @@
             height: 59.1px;
             margin-left: 156px;
         }
-        .abrir-cerrar {
-            display: none;
+        .nav-menu {
+            width: 45%;
         }
         .nav-menu ul {
+            width: 100%;
+            //background-color: violet;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -121,5 +123,9 @@
         }
         .item:hover {
             text-decoration: underline $secondary-color;
+        }
+        .nav-menu input,
+        .nav-menu label {
+            display: none;
         }
     }
