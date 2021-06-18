@@ -59,7 +59,9 @@
         display: flex;
         justify-content: center;
     }
-    .container-trending {
+    #trending {
+        width: 100%;
+        height: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -80,11 +82,11 @@
         padding: 0 10px 10px 10x;
         font-size: 14px;
     }
-    .container-gifs {
+    #container-gifs {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $third-color;
+        //background-color: $third-color;
         width: 100%;
         height: 400px;
     }
@@ -96,7 +98,7 @@
         padding: 5px;
         margin: 46px 0 7px 0;
     }
-    .container-gifs p {
+    #container-gifs p {
         font-size: 16px;
         font-family: 'Roboto', sans-serif;
         color: black;
@@ -186,7 +188,7 @@
         height: 20px;
         align-self: center;
     }
-    .container-trending {
+    #trending {
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -207,11 +209,11 @@
         //padding: 5px 10px 10px 10x;
         font-size: 16px;
     }
-    .container-gifs {
+    #container-gifs {
         display: flex;
         flex-direction: column;
         align-items: center;
-        background-color: $third-color;
+        //background-color: $third-color;
         width: 100%;
         height: 400px;
     }
@@ -223,7 +225,7 @@
         padding: 5px;
         margin: 67px 0 12px 0;
     }
-    .container-gifs p {
+    #container-gifs p {
         font-size: 18px;
         font-family: 'Roboto', sans-serif;
         color: black;

@@ -1,0 +1,34 @@
+@import "./header";
+@import "./main";
+@import "./footer";
+@import "./mainFavoritos";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.dark {
+    background-color: $primary-color-dark;
+}
+
+.moreDark {
+    background-color: $secondary-color-dark;
+}
+
+.light {
+    background-color: $white-color;
+}
+
+.light2 {
+    background-color: $third-color;
+}
+
+.blue-line {
+    background-color: $primary-color;
+}
+
+.black-line {
+    background-color: $black-color;
+}

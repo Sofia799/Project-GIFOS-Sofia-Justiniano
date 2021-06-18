@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./Styles/style.css">
+    <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 
 <body>
@@ -22,8 +22,9 @@
         <div class="linea-azul"></div>
         <div class="container-header">
 
-            <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
-
+            <a href="./index.html">
+                <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
+            </a>
             <nav class="nav-menu">
 
                 <input id="menu" type="checkbox" value="" />
@@ -34,10 +35,10 @@
                         <a class="item" href="#">Modo Nocturno</a>
                     </li>
                     <li class="item-menu">
-                        <a class="item" href="./favoritos.html">Favoritos</a>
+                        <a class="item" href="#">Favoritos</a>
                     </li>
                     <li class="item-menu">
-                        <a class="item" href="#">Mis GIFOS</a>
+                        <a class="item" href="./misGifos.html">Mis GIFOS</a>
                     </li>
                     <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
                 </ul>
@@ -54,19 +55,46 @@
         </div>
 
         <section id="container-gifs-favoritos">
-
-            <h2>GIFS favoritos</h2>
-
+            <h2></h2>
         </section>
 
         <div class="container-btn-verMas">
             <button id="button-verMas">VER MAS</button>
-
         </div>
 
-
+        <section class="container-gifs">
+            <h2 class="tittle-trending-gifos">Trending GIFOS</h2>
+            <div id="container-parrafos">
+                <p>Mira los últimos</p>
+                <p>GIFOS de nuestra comunidad.</p>
+            </div>
+            <div id="gifs"></div>
+        </section>
 
     </main>
+
+    <footer class="container-footer">
+
+        <div class="containerIconsH5">
+            <h5>Compartir en:</h5>
+            <div class="container-icons">
+                <a href="#">
+                    <img src="./Images/icon_facebook.svg" alt="Icon-facebook">
+                </a>
+                <a href="#">
+                    <img src="./Images/icon-twitter.svg" alt="Icon-twitter">
+                </a>
+                <a href="#">
+                    <img src="./Images/icon_instagram.svg" alt="Icon-instagram">
+                </a>
+            </div>
+        </div>
+        <div class="container-copyright">
+            <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
+        </div>
+        <div class="linea-azul"></div>
+
+    </footer>
 
 
 </body>

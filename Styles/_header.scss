@@ -3,12 +3,12 @@
         header {
             width: 100%;
             height: 95px;
-            //background-color: rgb(176, 176, 255);
+            background-color: $white-color;
         }
-        .linea-azul {
+        #linea-azul {
             width: 100%;
             height: 5px;
-            background-color: $primary-color;
+            //background-color: $primary-color;
         }
         .img-logo-gifos {
             width: 48.8px;
@@ -70,10 +70,19 @@
             height: 95px;
             //background-color: rgb(176, 176, 255);
         }
-        .linea-azul {
+        .header-dark {
+            background-color: $primary-color-dark;
+        }
+        .header-light {
+            background-color: $white-color;
+        }
+        #linea-azul {
             width: 100%;
             height: 5px;
-            background-color: $primary-color;
+            //background-color: $primary-color;
+        }
+        .black-line {
+            background-color: $black-color-dark;
         }
         .container-header {
             height: 90px;

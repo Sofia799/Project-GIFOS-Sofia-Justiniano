@@ -1,5 +1,5 @@
 @import "./variables";
-@media screen and (max-width: 899px) {
+@media screen and (max-width: 1800px) {
     .container-svg-tittle-favoritos {
         width: 100%;
         display: flex;
@@ -20,8 +20,7 @@
     }
     #container-gifs-favoritos {
         width: 100%;
-        height: 300px;
-        background-color: rgb(242, 218, 175);
+        height: 700px;
     }
     .container-btn-verMas {
         width: 100%;
@@ -40,5 +39,47 @@
         cursor: pointer;
         margin: 78px 0 78px 0;
         text-align: center;
+    }
+    .container-gifs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $third-color;
+        width: 100%;
+        height: 400px;
+    }
+    .tittle-trending-gifos {
+        color: $primary-color;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        padding: 5px;
+        margin: 46px 0 7px 0;
+    }
+    .container-gifs p {
+        font-size: 16px;
+        font-family: 'Roboto', sans-serif;
+        color: black;
+        padding: 2px;
+        display: block;
+        text-align: center;
+    }
+}
+
+@media screen and (min-width: 901px) {
+    .tittle-favoritos {
+        font-size: 25px;
+        margin-bottom: 36px;
+    }
+    .container-gifs {
+        height: 640px;
+    }
+    .tittle-trending-gifos {
+        font-size: 25px;
+        margin: 68px 0 12px 0;
+    }
+    .container-gifs p {
+        font-size: 18px;
+        display: inline-block;
     }
 }

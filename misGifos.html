@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GIFOS</title>
+    <title>Mis GIFOS</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,16 +13,17 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/styles.css">
+
 </head>
 
-<body id="body" class="body-dark">
+<body>
 
-    <header id="header" class="dark light">
+    <header>
 
-        <div id="linea-azul" class="black-line blue-line"></div>
+        <div class="linea-azul"></div>
         <div class="container-header">
 
-            <a href="#">
+            <a href="./index.html">
                 <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
             </a>
             <nav class="nav-menu">
@@ -30,16 +31,15 @@
                 <input id="menu" type="checkbox" value="" />
                 <label for="menu"><img id="burger" src="./Images/burger.svg" alt=""></label>
 
-                <ul class="ul-dark ul">
+                <ul>
                     <li class="item-menu">
-                        <button id="button" onclick="cambiarModo()" class="item">Modo Nocturno</button>
-                        <!--<a id="btn" onclick="cambiarModo()" class="item" href="">Modo Nocturno</a>-->
+                        <a class="item" href="">Modo Nocturno</a>
                     </li>
                     <li class="item-menu">
                         <a class="item" href="./favoritos.html">Favoritos</a>
                     </li>
                     <li class="item-menu">
-                        <a class="item" href="./misGifos.html">Mis GIFOS</a>
+                        <a class="item" href="#">Mis GIFOS</a>
                     </li>
                     <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
                 </ul>
@@ -49,52 +49,36 @@
     </header>
 
     <main>
-        <section id="container-busqGifos" class="container-buscador-GIFOS dark light">
 
-            <p class="tittle-p">
-                Inspírate, busca, guarda, y crea los mejores <span class="GIFOS">GIFOS</span>
-            </p>
+        <div class="container-svg-tittle-favoritos">
+            <img class="icon-favoritos" src="./Images/icon-mis-gifos.svg" alt="Icono Favoritos">
+            <h2 class="tittle-favoritos">Mis GIFOS</h2>
+        </div>
 
-            <div class="container-image">
-                <img src="./Images/ilustra_header.svg" 1 alt="Imagen 3 personas GIFOS">
-            </div>
-
-            <div class="buscador">
-                <input class="buscar-gifos" type="text" placeholder="Busca GIFOS y más">
-                <div class="container-lupa">
-                    <img class="lupa" src="./Images/icon-search.svg" alt="Lupa">
-                </div>
-            </div>
-
-            <div id="trending" class="dark light">
-                <h3 class="trending-tittle">Trending:</h3>
-                <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
-            </div>
-
-
+        <section id="container-gifs-favoritos">
+            <h2></h2>
         </section>
 
-        <section id="container-gifs" class="moreDark light2">
+        <div class="container-btn-verMas">
+            <button id="button-verMas">VER MAS</button>
+        </div>
 
+        <section class="container-gifs">
             <h2 class="tittle-trending-gifos">Trending GIFOS</h2>
             <div id="container-parrafos">
                 <p>Mira los últimos</p>
                 <p>GIFOS de nuestra comunidad.</p>
             </div>
             <div id="gifs"></div>
-
         </section>
 
     </main>
 
-    <footer id="container-footer" class="dark light">
+    <footer class="container-footer">
 
         <div class="containerIconsH5">
-
             <h5>Compartir en:</h5>
-
             <div class="container-icons">
-
                 <a href="#">
                     <img src="./Images/icon_facebook.svg" alt="Icon-facebook">
                 </a>
@@ -104,20 +88,15 @@
                 <a href="#">
                     <img src="./Images/icon_instagram.svg" alt="Icon-instagram">
                 </a>
-
             </div>
-
         </div>
-
         <div class="container-copyright">
             <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
         </div>
-
-        <div id="linea-azul2" class="black-line blue-line"></div>
+        <div class="linea-azul"></div>
 
     </footer>
 
-    <script src="./Script/script.js"></script>
 </body>
 
 </html>
