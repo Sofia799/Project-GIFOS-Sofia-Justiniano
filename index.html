@@ -15,24 +15,25 @@
     <link rel="stylesheet" href="./Styles/styles.css">
 </head>
 
-<body id="body" class="body-dark">
+<body>
 
     <header id="header" class="dark light">
 
-        <div id="linea-azul" class="black-line blue-line"></div>
+        <div id="linea-azul" class="blue-line black-line"></div>
         <div class="container-header">
 
             <a href="#">
                 <img class="img-logo-gifos" src="./Images/logo_gifos.svg" alt="Logo Gifos">
             </a>
-            <nav class="nav-menu">
+            <nav class="nav-menu dark light">
 
                 <input id="menu" type="checkbox" value="" />
                 <label for="menu"><img id="burger" src="./Images/burger.svg" alt=""></label>
 
-                <ul class="ul-dark ul">
+                <ul id="nav" class="moreDark dark blue">
                     <li class="item-menu">
-                        <button id="button" onclick="cambiarModo()" class="item">Modo Nocturno</button>
+                        <!--<button id="button">Modo Nocturno</button> -->
+                        <button type="button" id="button" onclick="cambiarModo()" class="item">Modo Nocturno</button>
                         <!--<a id="btn" onclick="cambiarModo()" class="item" href="">Modo Nocturno</a>-->
                     </li>
                     <li class="item-menu">
@@ -113,11 +114,13 @@
             <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
         </div>
 
-        <div id="linea-azul2" class="black-line blue-line"></div>
+        <div id="linea-azul-footer" class="black-line blue-line"></div>
 
     </footer>
 
     <script src="./Script/script.js"></script>
+    <script src="./Script/gifs.js"></script>
+
 </body>
 
 </html>

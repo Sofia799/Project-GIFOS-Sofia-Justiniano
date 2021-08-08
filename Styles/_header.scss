@@ -3,12 +3,15 @@
         header {
             width: 100%;
             height: 95px;
-            background-color: $white-color;
+            //background-color: $white-color;
         }
         #linea-azul {
             width: 100%;
             height: 5px;
             //background-color: $primary-color;
+        }
+        .blue-line {
+            background-color: $primary-color;
         }
         .img-logo-gifos {
             width: 48.8px;
@@ -27,7 +30,7 @@
         }
         .nav-menu ul {
             display: none;
-            background-color: $primary-color-variant;
+            //background-color: $primary-color-variant;
             //margin: 0;
         }
         input:checked~ul {
@@ -56,6 +59,12 @@
             font-weight: bold;
             font-size: 15px;
         }
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            color: $primary-color;
+        }
     }
     
     @media screen and (min-width: 501px) {
@@ -70,19 +79,13 @@
             height: 95px;
             //background-color: rgb(176, 176, 255);
         }
-        .header-dark {
-            background-color: $primary-color-dark;
-        }
-        .header-light {
-            background-color: $white-color;
-        }
         #linea-azul {
             width: 100%;
             height: 5px;
             //background-color: $primary-color;
         }
-        .black-line {
-            background-color: $black-color-dark;
+        .blue-line {
+            background-color: $primary-color;
         }
         .container-header {
             height: 90px;
@@ -99,13 +102,16 @@
         .nav-menu {
             width: 45%;
         }
+        // #nav {
+        //     background-color: $white-color;
+        // }
         .nav-menu ul {
             width: 100%;
-            //background-color: violet;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
             align-items: center;
+            background-color: $white-color;
         }
         .button-cruz {
             outline: none;
@@ -127,7 +133,7 @@
         }
         .item {
             height: 28px;
-            color: $primary-color;
+            //color: $primary-color;
             font-size: 13px;
         }
         .item:hover {
@@ -136,5 +142,11 @@
         .nav-menu input,
         .nav-menu label {
             display: none;
+        }
+        button {
+            background-color: transparent;
+            cursor: pointer;
+            border: none;
+            color: $primary-color;
         }
     }
