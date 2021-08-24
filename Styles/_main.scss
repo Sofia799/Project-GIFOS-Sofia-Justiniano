@@ -44,6 +44,9 @@
         //margin: 0 21px 0 21px;
         width: 90%;
     }
+    input:focus {
+        outline: none;
+    }
     .buscar-gifos {
         //color: black;
         margin: 15px 40px 15px 40px;
@@ -66,6 +69,12 @@
         flex-direction: column;
         align-items: center;
         margin: 30px 0 45px 0;
+    }
+    #trending p {
+        margin: 0 70px 0 70px;
+        color: $primary-color;
+        text-align: center;
+        font-size: 14px;
     }
     .trending-tittle {
         font-family: 'Montserrat', sans-serif;
@@ -108,6 +117,21 @@
     }
 }
 
+#gifs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    // border: 2px solid black;
+    overflow: hidden;
+}
+
+#gifs img {
+    width: 50%;
+    height: 187px;
+    margin: 32px 0 0 22px;
+}
+
 @media screen and (min-width: 501px) {
     .container-image {
         width: 90%;
@@ -121,6 +145,19 @@
         margin: auto;
         //align-self: center;
         //margin: 0px 51px 0 51px;
+    }
+    #gifs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 2px solid black;
+        width: 85%;
+        overflow: hidden;
+    }
+    #gifs img {
+        width: 40%;
+        height: 275px;
+        margin: 53px 0 182px 29px;
     }
 }
 
@@ -137,7 +174,7 @@
         color: $primary-color;
         font-family: 'Montserrat', sans-serif;
         text-align: center;
-        margin: 76px 263px 0 263px;
+        margin: 100px 263px 0 263px;
         //background-color: yellowgreen;
         font-weight: bold;
     }
@@ -168,6 +205,9 @@
         justify-content: space-between;
         border: 1px solid $primary-color;
     }
+    input:focus {
+        outline: none;
+    }
     .buscar-gifos {
         //color: black;
         margin: 13px auto 13px 54px;
@@ -194,6 +234,11 @@
         align-items: center;
         margin: 73px 0 95px 0;
     }
+    #trending p {
+        color: $black-color;
+        text-align: center;
+        font-size: 18px;
+    }
     .trending-tittle {
         font-family: 'Montserrat', sans-serif;
         color: $primary-color;
@@ -215,7 +260,7 @@
         align-items: center;
         //background-color: $third-color;
         width: 100%;
-        height: 400px;
+        height: auto;
     }
     .tittle-trending-gifos {
         color: $primary-color;

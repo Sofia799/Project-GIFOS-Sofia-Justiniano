@@ -1,7 +1,14 @@
 function cambiarModo() {
     let objDark = document.querySelectorAll(".dark");
     let blueline = document.querySelectorAll(".blue-line")
-        //console.log(darkMode);
+
+    const theme = document.getElementById("theme");
+
+    if (theme.getAttribute("href") == "light-mode-letras.css") {
+        theme.href = "dark-mode-letras.css";
+    } else {
+        theme.href = "light-mode-letras.css";
+    }
 
     for (const obj of objDark) {
         if (obj.className == "light") {
@@ -29,7 +36,43 @@ function cambiarModo() {
         }
     }
 
+
+
+    // cambiarColorTexto()
+
 }
+
+function cambiarColorTexto() {
+
+    const whiteTexts = document.getElementsByClassName("whiteText");
+
+
+    for (let i = 0; i < whiteTexts.length; i++) {
+
+        const textColor = whiteTexts[i].style.color;
+        console.log(textColor)
+
+        // switch (textColor) {
+        //     case "black":
+        //     case "#572EE5":
+        //         textColor = "white";
+        //         break;
+
+        //     default:
+        //         textColor = "572EE5"
+        //         break;
+        // }
+    }
+
+
+}
+// for (const texto of textos) {
+//     if (texto.) {
+
+//     }
+// }
+
+
 
 
 // let header = document.getElementById("header");

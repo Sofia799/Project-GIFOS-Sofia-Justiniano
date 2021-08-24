@@ -13,13 +13,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="light-mode-letras.css" id="theme">
 </head>
 
 <body>
 
     <header id="header" class="dark light">
 
-        <div id="linea-azul" class="blue-line black-line"></div>
+        <!-- <div id="linea-azul" class="blue-line black-line"></div> -->
         <div class="container-header">
 
             <a href="#">
@@ -33,14 +34,14 @@
                 <ul id="nav" class="moreDark dark blue">
                     <li class="item-menu">
                         <!--<button id="button">Modo Nocturno</button> -->
-                        <button type="button" id="button" onclick="cambiarModo()" class="item">Modo Nocturno</button>
+                        <button type="button" id="button" onclick="cambiarModo()" class="item whiteText">MODO NOCTURNO</button>
                         <!--<a id="btn" onclick="cambiarModo()" class="item" href="">Modo Nocturno</a>-->
                     </li>
                     <li class="item-menu">
-                        <a class="item" href="./favoritos.html">Favoritos</a>
+                        <a class="item whiteText" href="./favoritos.html">FAVORITOS</a>
                     </li>
                     <li class="item-menu">
-                        <a class="item" href="./misGifos.html">Mis GIFOS</a>
+                        <a class="item whiteText" href="./misGifos.html">MIS GIFOS</a>
                     </li>
                     <button class="button-cruz" type="button"><img class="img-cruz" src="./Images/button-crear-gifo.svg" alt="button"></button>
                 </ul>
@@ -52,7 +53,7 @@
     <main>
         <section id="container-busqGifos" class="container-buscador-GIFOS dark light">
 
-            <p class="tittle-p">
+            <p class="tittle-p whiteText contenidoP">
                 Inspírate, busca, guarda, y crea los mejores <span class="GIFOS">GIFOS</span>
             </p>
 
@@ -68,8 +69,8 @@
             </div>
 
             <div id="trending" class="dark light">
-                <h3 class="trending-tittle">Trending:</h3>
-                <p>Reactions, Entertainment, Sports, Stickers, Artists</p>
+                <h3 class="trending-tittle whiteText contenidoTittle">Trending:</h3>
+                <p class="contenidoP whiteText">Reactions, Entertainment, Sports, Stickers, Artists</p>
             </div>
 
 
@@ -77,10 +78,10 @@
 
         <section id="container-gifs" class="moreDark light2">
 
-            <h2 class="tittle-trending-gifos">Trending GIFOS</h2>
+            <h2 class="tittle-trending-gifos tittle whiteText">Trending GIFOS</h2>
             <div id="container-parrafos">
-                <p>Mira los últimos</p>
-                <p>GIFOS de nuestra comunidad.</p>
+                <p class="contenidoP whiteText">Mira los últimos</p>
+                <p class="contenidoP whiteText">GIFOS de nuestra comunidad.</p>
             </div>
             <div id="gifs"></div>
 
@@ -92,7 +93,7 @@
 
         <div class="containerIconsH5">
 
-            <h5>Compartir en:</h5>
+            <h5 class="contenidoTittle whiteText">Compartir en:</h5>
 
             <div class="container-icons">
 
@@ -111,15 +112,15 @@
         </div>
 
         <div class="container-copyright">
-            <p class="copyright">© GIFOS 2020 All Rights Reserved.</p>
+            <p class="copyright whiteText">© GIFOS 2020 All Rights Reserved.</p>
         </div>
 
-        <div id="linea-azul-footer" class="black-line blue-line"></div>
+        <!-- <div id="linea-azul-footer" class="black-line blue-line"></div> -->
 
     </footer>
 
-    <script src="./Script/script.js"></script>
-    <script src="./Script/gifs.js"></script>
+    <script src="./Script/dark-mode.js"></script>
+    <script src="./Script/trending-gifs.js"></script>
 
 </body>
 

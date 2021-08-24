@@ -5,15 +5,16 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        border-bottom: 5px solid $primary-color;
     }
     #linea-azul-footer {
         width: 100%;
         height: 5px;
-        //@extend: $primary-color;
+        //background-color: $primary-color;
     }
-    .blue-line {
-        background-color: $primary-color;
-    }
+    // .blue-line {
+    //     background-color: $primary-color;
+    // }
     .container-copyright {
         display: flex;
         width: 100%;
@@ -59,17 +60,18 @@
         height: 116px;
         display: flex;
         flex-direction: column;
+        border-bottom: 5px solid $primary-color;
         //justify-content: center;
         //background-color: yellowgreen;
     }
     #linea-azul-footer {
         width: 100%;
         height: 5px;
-        // background-color: $primary-color;
+        //background-color: $primary-color;
     }
-    .blue-line {
-        background-color: $primary-color;
-    }
+    // .blue-line {
+    //     background-color: $primary-color;
+    // }
     .containerIconsH5 {
         width: 40%;
         display: flex;

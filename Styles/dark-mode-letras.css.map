@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AACA,AAAA,UAAU,CAAC;EACP,KAAK,ECGK,KAAK;CDFlB;;AAED,AAAA,IAAI,CAAC;EACD,UAAU,ECGK,OAAO;CDFzB",
+    "sources": [
+        "dark-mode-letras.scss",
+        "_variables.scss"
+    ],
+    "names": [],
+    "file": "dark-mode-letras.css"
+}
