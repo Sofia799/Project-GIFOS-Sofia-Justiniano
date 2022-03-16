@@ -1,9 +1,30 @@
 @import "./variables";
-.dark {
-    background-color: $primary-color-dark;
-    #linea-azul,
-    #linea-azul-footer {
-        background-color: black;
+@media screen and (max-width: 900px) {
+    .dark {
+        background-color: $primary-color-dark;
+        #nav {
+            background-color: $black-color-dark;
+        }
+    }
+    .light {
+        #nav {
+            background-color: $primary-color-variant;
+        }
+    }
+}
+
+@media screen and (min-width: 899px) {
+    .dark {
+        background-color: $primary-color-dark;
+        #nav {
+            background-color: $primary-color-dark;
+        }
+    }
+    .light {
+        background-color: $white-color;
+        #nav {
+            background-color: $white-color;
+        }
     }
 }
 
@@ -14,21 +35,21 @@
     }
 }
 
+.light2 {
+    background-color: $third-color;
+}
+
+.dark {
+    #linea-azul,
+    #linea-azul-footer {
+        background-color: $black-color-dark;
+    }
+}
+
 .light {
     background-color: $white-color;
     #linea-azul,
     #linea-azul-footer {
         background-color: $primary-color;
-    }
-}
-
-.light2 {
-    background-color: $third-color;
-}
-
-.blue {
-    background-color: $primary-color-variant;
-    #nav {
-        background-color: $secondary-color-dark;
     }
 }
