@@ -262,7 +262,6 @@
   }
   #trending p {
     margin: 0 70px 0 70px;
-    color: #572EE5;
     text-align: center;
     font-size: 14px;
   }
@@ -296,7 +295,6 @@
     height: 400px;
   }
   .tittle-trending-gifos {
-    color: #572EE5;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 20px;
@@ -459,7 +457,6 @@
     margin: 73px 0 95px 0;
   }
   #trending p {
-    color: black;
     text-align: center;
     font-size: 18px;
   }
@@ -492,7 +489,6 @@
     height: auto;
   }
   .tittle-trending-gifos {
-    color: #572EE5;
     font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     font-size: 25px;
@@ -558,7 +554,6 @@
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
-    color: black;
     font-size: 15px;
     margin-top: 47px;
   }
@@ -637,7 +632,6 @@
   }
   .containerIconsH5 h5 {
     font-family: 'Roboto', sans-serif;
-    color: black;
     font-size: 13px;
     margin-left: 156px;
   }
@@ -771,8 +765,14 @@
   .dark #nav {
     background-color: #000000;
   }
+  .dark #nav .item {
+    color: white;
+  }
   .light #nav {
     background-color: rgba(86, 46, 229, 0.892);
+  }
+  .light #nav .item {
+    color: white;
   }
 }
 
@@ -783,11 +783,22 @@
   .dark #nav {
     background-color: #37383C;
   }
+  .dark #nav .item,
+  .dark #container-gifs .whiteText {
+    color: white;
+  }
   .light {
     background-color: white;
   }
   .light #nav {
     background-color: white;
+  }
+  .light #trending p {
+    color: black;
+  }
+  .light #nav .item,
+  .light #container-gifs .whiteText {
+    color: #572EE5;
   }
 }
 
@@ -799,13 +810,32 @@
   background-color: rgba(86, 46, 229, 0.892);
 }
 
+.moreDark .tittle-trending-gifos,
+.moreDark #container-parrafos .contenidoP {
+  color: white;
+}
+
 .light2 {
   background-color: #F3F5F8;
+}
+
+.light2 #container-parrafos .contenidoP {
+  color: black;
+}
+
+.light2 .tittle-trending-gifos {
+  color: #572EE5;
 }
 
 .dark #linea-azul,
 .dark #linea-azul-footer {
   background-color: #000000;
+}
+
+.dark .whiteText,
+.dark .containerIconsH5 h5,
+.dark .container-copyright .copyright {
+  color: white;
 }
 
 .light {
@@ -815,5 +845,14 @@
 .light #linea-azul,
 .light #linea-azul-footer {
   background-color: #572EE5;
+}
+
+.light .whiteText {
+  color: #572EE5;
+}
+
+.light .containerIconsH5 h5,
+.light .container-copyright .copyright {
+  color: black;
 }
 /*# sourceMappingURL=styles.css.map */

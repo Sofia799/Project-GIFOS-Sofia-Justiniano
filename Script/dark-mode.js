@@ -1,17 +1,13 @@
 function cambiarModo() {
     let objDark = document.querySelectorAll(".dark");
-
-    const theme = document.getElementById("theme");
-
-    if (theme.getAttribute("href") == "light-mode-letras.css") {
-        theme.href = "dark-mode-letras.css";
-    } else {
-        theme.href = "light-mode-letras.css";
-    }
+    let imgLogo = document.getElementById("logo");
+    let burger = document.getElementById("burger");
+    let whiteText = document.getElementsByClassName("whiteText")
 
     for (const obj of objDark) {
         if (obj.className == "light") {
             obj.classList.toggle("dark");
+
         } else {
             obj.classList.toggle("light");
         }
@@ -25,6 +21,18 @@ function cambiarModo() {
         } else {
             obj.classList.toggle("light2")
         }
+    }
+
+    if (!imgLogo.src.match("noct")) {
+        imgLogo.src = "./Images/logo-mobile-modo-noct.svg";
+    } else {
+        imgLogo.src = "./Images/logo_gifos.svg"
+    }
+
+    if (!burger.src.match("noct")) {
+        burger.src = "./Images/burger-modo-noct.svg"
+    } else {
+        burger.src = "./Images/burger.svg"
     }
 
 }
