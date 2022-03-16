@@ -1,28 +1,34 @@
 @import "./variables";
 .dark {
     background-color: $primary-color-dark;
+    #linea-azul,
+    #linea-azul-footer {
+        background-color: black;
+    }
 }
 
 .moreDark {
     background-color: $secondary-color-dark;
+    #nav {
+        background-color: $primary-color-variant;
+    }
 }
 
 .light {
     background-color: $white-color;
+    #linea-azul,
+    #linea-azul-footer {
+        background-color: $primary-color;
+    }
 }
 
 .light2 {
     background-color: $third-color;
 }
 
-.blue-line {
-    background-color: $primary-color;
-}
-
 .blue {
     background-color: $primary-color-variant;
-}
-
-.black-line {
-    background-color: $black-color;
+    #nav {
+        background-color: $secondary-color-dark;
+    }
 }

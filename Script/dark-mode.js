@@ -1,6 +1,6 @@
 function cambiarModo() {
     let objDark = document.querySelectorAll(".dark");
-    let blueline = document.querySelectorAll(".blue-line")
+    let blackline = document.querySelectorAll(".blackLine")
 
     const theme = document.getElementById("theme");
 
@@ -18,13 +18,7 @@ function cambiarModo() {
         }
     }
 
-    for (const obj of blueline) {
-        if (obj.className == "blue-line") {
-            obj.classList.toggle("black-line")
-        } else {
-            obj.classList.toggle("blue-line")
-        }
-    }
+
 
     let objMoreDark = document.querySelectorAll(".moreDark");
 
