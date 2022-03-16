@@ -235,6 +235,7 @@
     text-align: left;
     width: 50%;
     font-size: 16px;
+    background-color: transparent;
   }
   .container-lupa {
     width: 20%;
@@ -426,6 +427,7 @@
     text-align: left;
     width: 50%;
     font-size: 16px;
+    background-color: transparent;
   }
   .container-lupa {
     width: 10%;
@@ -838,6 +840,10 @@
   color: white;
 }
 
+.dark .buscador {
+  border: 1px solid white;
+}
+
 .light {
   background-color: white;
 }
@@ -854,5 +860,9 @@
 .light .containerIconsH5 h5,
 .light .container-copyright .copyright {
   color: black;
+}
+
+.light .buscador {
+  border: 1px solid #572EE5;
 }
 /*# sourceMappingURL=styles.css.map */

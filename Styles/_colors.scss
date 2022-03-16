@@ -76,6 +76,9 @@
     .container-copyright .copyright {
         color: $white-color;
     }
+    .buscador {
+        border: 1px solid $white-color;
+    }
 }
 
 .light {
@@ -90,5 +93,8 @@
     .containerIconsH5 h5,
     .container-copyright .copyright {
         color: $black-color;
+    }
+    .buscador {
+        border: 1px solid $primary-color;
     }
 }

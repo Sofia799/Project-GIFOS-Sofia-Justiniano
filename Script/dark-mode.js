@@ -2,7 +2,7 @@ function cambiarModo() {
     let objDark = document.querySelectorAll(".dark");
     let imgLogo = document.getElementById("logo");
     let burger = document.getElementById("burger");
-    let whiteText = document.getElementsByClassName("whiteText")
+
 
     for (const obj of objDark) {
         if (obj.className == "light") {
@@ -33,6 +33,24 @@ function cambiarModo() {
         burger.src = "./Images/burger-modo-noct.svg"
     } else {
         burger.src = "./Images/burger.svg"
+    }
+
+
+    let cruzButton = document.getElementById("btn-cruz");
+
+    if (!cruzButton.src.match("noc")) {
+        cruzButton.src = "./Images/CTA-crar-gifo-modo-noc.svg";
+    } else {
+        cruzButton.src = "./Images/button-crear-gifo.svg"
+    }
+
+
+    let lupa = document.getElementById("lupa");
+
+    if (!lupa.src.match("mod-noc")) {
+        lupa.src = "./Images/icon-search-mod-noc.svg"
+    } else {
+        lupa.src = "./Images/icon-search.svg"
     }
 
 }
