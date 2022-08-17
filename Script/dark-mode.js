@@ -36,6 +36,7 @@ function cambiarModo() {
     }
 
 
+
     let cruzButton = document.getElementById("btn-cruz");
 
     if (!cruzButton.src.match("noc")) {
@@ -51,6 +52,15 @@ function cambiarModo() {
         lupa.src = "./Images/icon-search-mod-noc.svg"
     } else {
         lupa.src = "./Images/icon-search.svg"
+    }
+
+
+    let textButtonNav = document.getElementById("button");
+
+    if (textButtonNav.innerText == "MODO NOCTURNO") {
+        textButtonNav.innerText = "MODO DIURNO";
+    } else {
+        textButtonNav.innerText = "MODO NOCTURNO";
     }
 
 }
